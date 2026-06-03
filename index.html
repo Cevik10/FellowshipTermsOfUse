@@ -2,60 +2,375 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Captain’s Log: Stardate – Support</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Terms of Use for Fellowship of LOTR — a Middle-earth companion app by Agile Conqueror Company." />
+  <title>Terms of Use | Fellowship of LOTR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --bg-deep: #0a0b0c;
+      --bg-card: rgba(18, 14, 12, 0.92);
+      --gold: #c9a227;
+      --gold-dim: rgba(201, 162, 39, 0.55);
+      --crimson: #8b2635;
+      --text: #e8e0d4;
+      --text-muted: #a89880;
+      --border: rgba(201, 162, 39, 0.35);
+      --link: #d4b84a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-      max-width: 720px;
-      margin: 40px auto;
-      padding: 0 16px;
-      line-height: 1.6;
-      color: #111827;
+      font-family: "Crimson Pro", Georgia, "Times New Roman", serif;
+      font-size: 1.125rem;
+      line-height: 1.75;
+      color: var(--text);
+      background:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(139, 38, 53, 0.25), transparent),
+        radial-gradient(ellipse 60% 40% at 100% 100%, rgba(201, 162, 39, 0.08), transparent),
+        linear-gradient(180deg, #0f0d0b 0%, var(--bg-deep) 40%, #060607 100%);
+      min-height: 100vh;
+      padding: 2rem 1rem 4rem;
     }
+
+    .wrap { max-width: 720px; margin: 0 auto; }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      font-family: "Cinzel", serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--crimson);
+      margin-bottom: 0.75rem;
+    }
+
     h1 {
-      font-size: 28px;
-      margin-bottom: 12px;
+      font-family: "Cinzel", serif;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.06em;
+      margin-bottom: 0.5rem;
     }
+
+    .subtitle {
+      font-style: italic;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .meta {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    main {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem 1.75rem;
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+    }
+
     h2 {
-      margin-top: 24px;
-      font-size: 20px;
+      font-family: "Cinzel", serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 2rem 0 0.75rem;
+      padding-bottom: 0.35rem;
+      border-bottom: 1px solid var(--gold-dim);
     }
-    a { text-decoration: none; color: #2563eb; }
+
+    h2:first-child { margin-top: 0; }
+
+    p { margin-bottom: 1rem; }
+
+    ul, ol {
+      margin: 0 0 1rem 1.25rem;
+    }
+
+    li { margin-bottom: 0.4rem; }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { color: #f0d878; }
+
+    strong { color: var(--text); font-weight: 600; }
+
+    .ornament {
+      text-align: center;
+      color: var(--gold-dim);
+      margin: 1.5rem 0;
+      letter-spacing: 0.5em;
+      font-size: 0.75rem;
+    }
+
+    .notice {
+      border-left: 3px solid var(--crimson);
+      padding: 0.75rem 1rem;
+      margin-bottom: 1rem;
+      background: rgba(139, 38, 53, 0.12);
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    footer a { color: var(--gold-dim); }
+
+    @media (max-width: 480px) {
+      main { padding: 1.5rem 1.15rem; }
+      body { font-size: 1.05rem; }
+    }
   </style>
 </head>
 <body>
-  <h1>Captain’s Log: Stardate – Support</h1>
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">Middle-earth · Covenant of Use</p>
+      <h1>Terms of Use</h1>
+      <p class="subtitle">Fellowship of LOTR</p>
+      <p class="meta">Effective date: <strong>June 2, 2026</strong></p>
+    </header>
 
-  <p>
-    This page provides support information for the <strong>Captain’s Log: Stardate</strong> mobile application.
-    If you have any questions, need assistance, or want to report an issue, you’re in the right place.
-  </p>
+    <main>
+      <h2>Agreement to Terms</h2>
+      <p>
+        These Terms of Use (“Terms”) govern your access to and use of the mobile application
+        <strong>Fellowship of LOTR</strong> (“App”, “Service”), published by
+        <strong>Agile Conqueror Company</strong>, represented by <strong>Hakan Çevik</strong>
+        (“we”, “us”, “our”).
+      </p>
+      <p>
+        By downloading, installing, or using the App, you agree to be bound by these Terms and our
+        <a href="https://cevik10.github.io/FellowshipOfLotrPrivacyPolicy/">Privacy Policy</a>.
+        If you do not agree, do not use the App.
+      </p>
 
-  <h2>Contact</h2>
-  <p>
-    For technical issues, feature requests, feedback, account matters, or general inquiries, please contact:
-  </p>
-  <p>
-    <strong>Email:</strong>
-    <a href="mailto:hakanxcevik7@gmail.com">hakanxcevik7@gmail.com</a>
-  </p>
+      <div class="notice">
+        <strong>Important:</strong> Fellowship of LOTR is an independent fan-made companion app.
+        It is <strong>not</strong> affiliated with, endorsed by, or sponsored by Middle-earth
+        Enterprises, Warner Bros., Amazon, Tolkien Estate, or any other rights holder of
+        <em>The Lord of the Rings</em> or related works. All trademarks and copyrights belong to
+        their respective owners.
+      </div>
 
-  <h2>Account & Data</h2>
-  <p>
-    You may request data deletion, log removal, or account-related assistance via email.
-    Please contact us from the email address you used inside the app and include any relevant details.
-  </p>
+      <div class="ornament">✦ ✦ ✦</div>
 
-  <h2>Abuse & Safety</h2>
-  <p>
-    To report inappropriate content, bugs, or security concerns, email us with screenshots or descriptions.
-    All reports are reviewed according to our guidelines and applicable laws.
-  </p>
+      <h2>Eligibility</h2>
+      <p>
+        You must be at least <strong>13 years old</strong> to use the App. If you are under 18,
+        you represent that you have permission from a parent or legal guardian to use the App and
+        to make any purchases through your Google Play account.
+      </p>
 
-  <h2>Legal</h2>
-  <p>
-    &copy; 2025 Captain’s Log: Stardate. All rights reserved.
-  </p>
+      <h2>Description of the Service</h2>
+      <p>
+        Fellowship of LOTR is a commercial entertainment app that may include, among other features:
+      </p>
+      <ul>
+        <li>Quizzes, memory games, puzzles, and lore content</li>
+        <li>A personal journal / archive with optional photos and audio</li>
+        <li>A soundboard of film dialogue clips</li>
+        <li>3D model viewing, daily missions, themes, and in-app rewards</li>
+        <li>Optional rewarded advertisements and premium subscription benefits</li>
+      </ul>
+      <p>
+        We may add, modify, suspend, or remove features at any time without prior notice. The App
+        is provided on an “as available” basis.
+      </p>
+
+      <h2>License &amp; Acceptable Use</h2>
+      <p>
+        We grant you a limited, non-exclusive, non-transferable, revocable license to use the App
+        for personal, non-commercial purposes, subject to these Terms and applicable law.
+      </p>
+      <p>You agree <strong>not</strong> to:</p>
+      <ul>
+        <li>Reverse engineer, decompile, or attempt to extract source code from the App</li>
+        <li>Circumvent payment, subscription, or unlock systems</li>
+        <li>Use the App for unlawful, harmful, or abusive purposes</li>
+        <li>Upload or distribute content that infringes third-party rights or violates applicable law</li>
+        <li>Interfere with the App’s operation, servers, or other users’ experience</li>
+        <li>Resell, sublicense, or commercially exploit the App or its content without our written consent</li>
+      </ul>
+
+      <h2>User Content</h2>
+      <p>
+        Content you create in the App (such as journal entries, photos, or audio notes) is stored
+        primarily on your device. You retain ownership of your content. You are solely responsible
+        for the content you create and for obtaining any permissions needed to use images, audio,
+        or other materials you attach to entries.
+      </p>
+      <p>
+        By using optional image search, you understand that search queries may be sent to third-party
+        services (such as Pixabay) under their terms and policies.
+      </p>
+
+      <h2>Virtual Currency (Mithril Coins)</h2>
+      <p>
+        The App may include a virtual in-app currency called <strong>Mithril Coins</strong> (“Coins”).
+        Coins have <strong>no real-world monetary value</strong>, are non-transferable, and cannot be
+        exchanged for cash or refunded except where required by law or Google Play policy.
+      </p>
+      <p>
+        Coins may be earned through gameplay, missions, rewarded ads, or purchased as consumable
+        in-app products through Google Play. We may change Coin pricing, rewards, or availability at
+        any time. Unused Coins may be lost if you uninstall the App or clear app data.
+      </p>
+
+      <h2>Subscriptions &amp; In-App Purchases</h2>
+      <p>
+        The App offers optional <strong>premium subscriptions</strong> (e.g., monthly and yearly plans)
+        and <strong>consumable purchases</strong> (Mithril Coin packs). All billing is processed by
+        <strong>Google Play</strong> and managed through our billing partner
+        <strong>RevenueCat</strong>.
+      </p>
+      <p><strong>Subscription benefits</strong> may include, while your subscription is active:</p>
+      <ul>
+        <li>Ad-free or reduced-ad experience</li>
+        <li>Access to premium content (e.g., card designs, 3D relics, puzzle categories, soundboard quotes)</li>
+        <li>Daily bonus Coins and other premium perks described in the App</li>
+        <li>A premium title displayed in the App</li>
+      </ul>
+      <p>
+        Some plans may include a <strong>free trial</strong> (e.g., 3 days) where offered by Google Play.
+        Unless you cancel before the trial ends, your subscription will automatically convert to a paid
+        plan and renew according to Google Play’s billing cycle.
+      </p>
+      <p><strong>Renewals &amp; cancellation:</strong></p>
+      <ul>
+        <li>Subscriptions renew automatically until cancelled through Google Play</li>
+        <li>Manage or cancel subscriptions in Google Play → Payments &amp; subscriptions</li>
+        <li>Deleting the App does not cancel an active subscription</li>
+        <li>Use “Restore purchases” in the App if you reinstall or switch devices</li>
+      </ul>
+      <p>
+        Refunds for purchases and subscriptions are handled according to
+        <a href="https://play.google.com/about/play-terms/" target="_blank" rel="noopener noreferrer">Google Play’s terms and refund policies</a>.
+        We do not control Google’s refund decisions.
+      </p>
+
+      <h2>Advertisements</h2>
+      <p>
+        Free users may see <strong>rewarded video advertisements</strong> through Google AdMob.
+        Watching ads is optional unless required to claim a specific in-app reward. Premium subscribers
+        may receive an ad-free experience as described in the App. Ad availability may vary by region
+        and device.
+      </p>
+
+      <h2>Intellectual Property</h2>
+      <p>
+        The App, its original code, layout, and branding created by us are protected by applicable
+        intellectual property laws. Third-party content in the App — including film dialogue clips,
+        images, fonts, and lore references — may be subject to separate copyrights and licenses.
+      </p>
+      <p>
+        Nothing in these Terms grants you ownership of the App or any third-party intellectual property.
+        Unauthorized reproduction or distribution of App content is prohibited.
+      </p>
+
+      <h2>Third-Party Services</h2>
+      <p>
+        The App integrates third-party services including Google Play, Firebase, AdMob, RevenueCat,
+        and Pixabay. Your use of those services is subject to their respective terms and policies.
+        We are not responsible for third-party services outside our reasonable control.
+      </p>
+
+      <h2>Disclaimer of Warranties</h2>
+      <p>
+        TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE APP IS PROVIDED <strong>“AS IS”</strong> AND
+        <strong>“AS AVAILABLE”</strong> WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED,
+        INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+        PURPOSE, AND NON-INFRINGEMENT.
+      </p>
+      <p>
+        We do not warrant that the App will be uninterrupted, error-free, secure, or free of harmful
+        components, or that any defects will be corrected.
+      </p>
+
+      <h2>Limitation of Liability</h2>
+      <p>
+        TO THE MAXIMUM EXTENT PERMITTED BY LAW, AGILE CONQUEROR COMPANY, HAKAN ÇEVİK, AND OUR
+        AFFILIATES SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR
+        PUNITIVE DAMAGES, OR ANY LOSS OF DATA, PROFITS, OR GOODWILL, ARISING FROM YOUR USE OF OR
+        INABILITY TO USE THE APP.
+      </p>
+      <p>
+        OUR TOTAL LIABILITY FOR ANY CLAIM RELATING TO THE APP SHALL NOT EXCEED THE GREATER OF
+        (A) THE AMOUNT YOU PAID US THROUGH THE APP IN THE TWELVE (12) MONTHS BEFORE THE CLAIM, OR
+        (B) FIFTY US DOLLARS (USD $50), EXCEPT WHERE LIABILITY CANNOT BE LIMITED BY APPLICABLE LAW.
+      </p>
+
+      <h2>Indemnification</h2>
+      <p>
+        You agree to indemnify and hold harmless Agile Conqueror Company and Hakan Çevik from any
+        claims, damages, losses, or expenses (including reasonable legal fees) arising from your
+        violation of these Terms, misuse of the App, or infringement of any third-party rights.
+      </p>
+
+      <h2>Termination</h2>
+      <p>
+        We may suspend or terminate your access to the App at any time if we reasonably believe you
+        have violated these Terms or applicable law. You may stop using the App at any time by
+        uninstalling it. Sections that by nature should survive termination (including disclaimers,
+        limitation of liability, and governing law) will remain in effect.
+      </p>
+
+      <h2>Changes to These Terms</h2>
+      <p>
+        We may update these Terms from time to time. The updated version will be posted on this page
+        with a revised effective date. Continued use of the App after changes constitutes acceptance
+        of the updated Terms.
+      </p>
+
+      <h2>Governing Law</h2>
+      <p>
+        These Terms are governed by the laws of the <strong>Republic of Türkiye</strong>, without
+        regard to conflict-of-law principles, except where mandatory consumer protection laws in your
+        country of residence require otherwise.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        For questions about these Terms, contact:
+      </p>
+      <p>
+        <strong>Hakan Çevik</strong><br />
+        Agile Conqueror Company<br />
+        Email: <a href="mailto:hakanxcevik7@gmail.com">hakanxcevik7@gmail.com</a>
+      </p>
+    </main>
+
+    <footer>
+      <p>© 2026 Agile Conqueror Company · Fellowship of LOTR</p>
+      <p>
+        <a href="https://cevik10.github.io/FellowshipOfLotrPrivacyPolicy/">Privacy Policy</a> ·
+        <a href="https://cevik10.github.io/FellowshipOfLotrSupport/">Support</a>
+      </p>
+    </footer>
+  </div>
 </body>
 </html>
